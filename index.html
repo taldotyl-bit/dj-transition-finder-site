@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DJ Transition Finder</title>
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      margin: 0; min-height: 100vh; display: grid; place-items: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(circle at 30% 20%, #1d2b4a, #0b0f1a 70%);
+      color: #e8edf6;
+    }
+    main { max-width: 640px; padding: 3rem 1.5rem; text-align: center; }
+    h1 { font-size: 2.4rem; margin: 0 0 .5rem; letter-spacing: -0.02em; }
+    .tag { color: #8fa3c8; font-size: 1.1rem; margin: 0 0 2rem; }
+    .card {
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px; padding: 1.5rem; text-align: left; margin: 1rem 0;
+    }
+    .card h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: .08em; color: #8fa3c8; margin: 0 0 .75rem; }
+    ul { margin: 0; padding-left: 1.2rem; line-height: 1.7; }
+    a { color: #6ea8ff; }
+    footer { margin-top: 2rem; font-size: .9rem; color: #8fa3c8; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>🎧 DJ Transition Finder</h1>
+    <p class="tag">A browser extension that reads your currently-playing track and helps you find what to mix next — in key, in tempo.</p>
+
+    <div class="card">
+      <h2>What it does</h2>
+      <ul>
+        <li>Captures the track playing on SoundCloud (artist &amp; title).</li>
+        <li>Resolves the track's musical <strong>key and BPM</strong>.</li>
+        <li>Scores harmonically compatible tracks on the Camelot wheel.</li>
+        <li>Links out to real DJ set data so you can see what was played next.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Data &amp; attribution</h2>
+      <p>
+        Song key and BPM data is provided by
+        <a href="https://getsongbpm.com" rel="noopener">GetSongBPM</a>,
+        a free database of song tempos and keys. This project uses the
+        <a href="https://getsongbpm.com/api" rel="noopener">GetSongBPM API</a>
+        and credits <a href="https://getsongbpm.com" rel="noopener">getsongbpm.com</a>
+        as required by their terms of use.
+      </p>
+    </div>
+
+    <footer>
+      Currently in development. &middot; Key &amp; BPM by
+      <a href="https://getsongbpm.com" rel="noopener">getsongbpm.com</a>
+    </footer>
+  </main>
+</body>
+</html>
