@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DJ Transition Finder — Privacy Policy</title>
+  <title>DJ Harmonic Assistant — Privacy Policy</title>
   <style>
     :root { color-scheme: dark; }
     body {
@@ -21,46 +21,45 @@
 </head>
 <body>
   <main>
-    <h1>Privacy Policy — DJ Transition Finder</h1>
-    <p class="muted">Last updated: 15 June 2026</p>
+    <h1>Privacy Policy — DJ Harmonic Assistant</h1>
+    <p class="muted">Last updated: 17 June 2026</p>
 
     <p>
-      DJ Transition Finder is a browser extension that identifies the track you're
-      playing on SoundCloud and gives you links to related DJ sets, charts, and store
-      pages. We take a minimal-data approach.
+      DJ Harmonic Assistant is a browser extension that detects the musical key and BPM
+      of the SoundCloud track you're playing, entirely on your own device. We take a
+      strict no-data-collection approach.
     </p>
 
     <h2>What we collect</h2>
     <p>
-      <strong>Nothing is collected, transmitted, or sold.</strong> The extension does
-      not send your browsing activity, identity, or usage to us or any third party.
+      <strong>Nothing is collected, transmitted, or sold.</strong> The extension makes no
+      external network requests and sends no data — your activity, identity, and the audio
+      it analyses never reach us or any third party.
+    </p>
+
+    <h2>How audio analysis works</h2>
+    <p>
+      When you choose to analyse a track, the extension reads the audio of that SoundCloud
+      tab and processes it <strong>entirely within your browser</strong> to detect its
+      musical key and BPM, using on-device audio analysis (Web Audio and a bundled
+      WebAssembly analyzer). This audio is never uploaded, stored remotely, or shared. It
+      is held in memory only for the few seconds needed to compute the result, then discarded.
     </p>
 
     <h2>Data stored on your device</h2>
     <p>
-      Your lookup history and favorites are saved <strong>locally in your browser</strong>
-      (via the browser's extension storage) so the extension can show them back to you.
-      This data never leaves your device, and you can clear it at any time from within
-      the extension or by removing the extension.
+      The analysed results (key, BPM, and your chosen reference track) are saved
+      <strong>locally in your browser</strong> via the browser's extension storage, so the
+      extension can show them back to you and compare tracks. This data never leaves your
+      device, and you can clear it at any time by removing the extension.
     </p>
 
     <h2>Network activity</h2>
     <p>
-      The extension reads the track name from the SoundCloud page you're viewing. When
-      you click a link (e.g. to 1001tracklists, Beatport, YouTube, Spotify, or a Google
-      search), that opens the respective third-party website in a new tab — those sites'
-      own privacy policies then apply.
-    </p>
-    <p>
-      Advanced users may optionally configure their own self-hosted backend URL in the
-      extension's options. If you do, track lookups are sent only to the server you
-      control. By default, no such backend is configured and no lookups are sent anywhere.
-    </p>
-
-    <h2>Third-party data</h2>
-    <p>
-      Song key and BPM data, where shown, is provided by
-      <a href="https://getsongbpm.com" rel="noopener">GetSongBPM</a>.
+      The extension makes no external network requests of its own. If you click one of the
+      optional "dig deeper" links (e.g. to SoundCloud, YouTube, Spotify, or 1001tracklists),
+      that opens the respective third-party website in a new tab — those sites' own privacy
+      policies then apply.
     </p>
 
     <h2>Contact</h2>
@@ -68,7 +67,7 @@
       Questions? Email <a href="mailto:taldotyl@gmail.com">taldotyl@gmail.com</a>.
     </p>
 
-    <p class="muted"><a href="./">← Back to DJ Transition Finder</a></p>
+    <p class="muted"><a href="./">← Back to DJ Harmonic Assistant</a></p>
   </main>
 </body>
 </html>
